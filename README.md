@@ -1,2 +1,3 @@
-# movie_reco_app
-# reco_app
+# RECO_APP: Movie Recommendation Engine
+
+Machine Learning and Python
