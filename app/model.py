@@ -2,7 +2,6 @@ import pandas as pd
 from scipy.sparse import csr_matrix
 from sklearn.neighbors import NearestNeighbors
 from fuzzywuzzy import process
-import pickle
 import requests
 import json
 
@@ -28,13 +27,10 @@ def find_movie(movie_name):
     # Returning indices of and distances to the neighbors of each point 
     distances, indices = model_knn.kneighbors(mat_movie_users[idx], n_neighbors=5)
     
-    # Saving the model to disk
-    #pickle.dump(distances, indices, open('model.pkl','wb'))
-    
     # Printing the results '\nHere are your best matches: \n',
     #return distances, indices
-    for i in indices:
-        list_mov = list(movies['title'][i].where(i != idx))
+    for i in distances, indices:
+        list_mov = pd.DataFrame(movies['title'][i].where(i != idx))
         return list_mov
 
 print(find_movie('toy story'))
