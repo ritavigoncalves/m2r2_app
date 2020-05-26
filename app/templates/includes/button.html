@@ -1,0 +1,12 @@
+{% extends 'button.html' %}
+
+{% block content %}
+
+<div class="container">
+    <form class="form-inline mr-auto" action="/" method="get">
+        <input name="movie" class="form-control mr-sm-2" type="text" placeholder="Type a movie" aria-label="Type a movie">
+        <button class="btn btn-unique btn-rounded btn-sm my-0" type="submit">Search</button>
+    </form>
+</div>
+
+{% endblock content %}

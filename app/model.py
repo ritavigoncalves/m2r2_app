@@ -14,7 +14,6 @@ def find_movie(movie_name):
     #user_ratings = ratings.groupby(ratings['movieId'])['rating'].mean().round(2)
     #movie_ratings = pd.merge(movies, user_ratings, how='left', on='movieId')
     movie_users = ratings.pivot(index='movieId', columns=('userId'), values='rating').fillna(0)
-
     mat_movie_users = csr_matrix(movie_users)
 
     # KNN Model
@@ -24,13 +23,13 @@ def find_movie(movie_name):
     idx = process.extractOne(movie_name, movies['title'])[2]
     #return 'Movie selected: ', movies['title'][idx], '| Index: ', idx
 
-    # Returning indices of and distances to the neighbors of each point 
-    distances, indices = model_knn.kneighbors(mat_movie_users[idx], n_neighbors=5)
+    # Returning indices of and distances to the neighbors of each point
+    indice = model_knn.kneighbors(mat_movie_users[idx], n_neighbors=5, return_distance=False)
     
     # Printing the results '\nHere are your best matches: \n',
     #return distances, indices
-    for i in distances, indices:
+    for i in indice:
         list_mov = pd.DataFrame(movies['title'][i].where(i != idx))
         return list_mov
 
-print(find_movie('toy story'))
+# print(find_movie('toy story'))

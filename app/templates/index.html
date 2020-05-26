@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <title>HTML5 Skeleton</title>
+  <title>Reco App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="HTML5 skeleton index.html">
   <meta name="keywords" content="html5,skeleton,index,homepage,jquery,bootstrap">
@@ -17,14 +17,13 @@
     <div class="row">
         <h4>What's your favourite movie?</h4>
     </div>
+
+    {% include button.html %}
+
     <div class="row">
-        <form class="form-inline mr-auto" action="/" method="get">
-            <input name="movie", class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" value={}>
-            <button class="btn btn-unique btn-rounded btn-sm my-0" type="submit" value="Results">Search</button>
-            <br>These are the movies we recommend: {}
-        </form>
+      <h4>These are the movies we recommend: {}</h4>
     </div>
-  </div>
+    
 </main>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>

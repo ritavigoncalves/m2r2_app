@@ -1,1 +1,4 @@
 from app import app
+
+FLASK_APP=app.py
+FLASK_DEBUG=1
