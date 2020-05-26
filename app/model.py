@@ -19,21 +19,22 @@ def find_movie(movie_name):
     mat_movie_users = csr_matrix(movie_users)
 
     # KNN Model
-    model_knn = NearestNeighbors(metric='cosine', algorithm='brute', n_neighbors=20).fit(mat_movie_users)
+    model_knn = NearestNeighbors(metric='cosine', algorithm='brute', n_neighbors=5).fit(mat_movie_users)
 
     # Extracting a movie_name with the user input
     idx = process.extractOne(movie_name, movies['title'])[2]
-    print('Movie selected: ', movies['title'][idx], '| Index: ', idx)
+    #return 'Movie selected: ', movies['title'][idx], '| Index: ', idx
 
     # Returning indices of and distances to the neighbors of each point 
     distances, indices = model_knn.kneighbors(mat_movie_users[idx], n_neighbors=5)
     
     # Saving the model to disk
-    pickle.dump(distances, indices, open('model.pkl','wb'))
+    #pickle.dump(distances, indices, open('model.pkl','wb'))
     
-    # Printing the results
-    print('\nHere are your best matches: \n', distances, indices)
+    # Printing the results '\nHere are your best matches: \n',
+    #return distances, indices
     for i in indices:
-        print(movies['title'][i].where(i != idx))
+        list_mov = list(movies['title'][i].where(i != idx))
+        return list_mov
 
-find_movie(input)
+print(find_movie('toy story'))
