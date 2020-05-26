@@ -35,3 +35,5 @@ def find_movie(movie_name):
     print('\nHere are your best matches: \n', distances, indices)
     for i in indices:
         print(movies['title'][i].where(i != idx))
+
+find_movie(input)

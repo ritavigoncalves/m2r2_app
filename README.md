@@ -1,2 +1,3 @@
-# movie_reco_app
-# reco_app
+# Movie Recommendation Engine (reco_app)
+
+Project developed at Wild Code School
