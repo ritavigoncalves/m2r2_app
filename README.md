@@ -13,16 +13,19 @@ Created by:
   - [Rita Goncalves](https://www.linkedin.com/in/ritavigoncalves/)
 
 
-Here´s the app preview:
 
-![Image](static/images/m2r2-app-preview.jpg)
-
+Here´s a sneak peak into our app ;)
 
 
-
+![Image](static/images/m2r2-app-preview-2.jpg)
 
 
 
 
+
+
+
+
+To see the whole project, download the folders and run it locally. Enjoy!
 
 #machine_learning #ml #ai #programming #flask #html #css #python
