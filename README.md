@@ -6,6 +6,12 @@ Datasets used: [MovieLens](https://grouplens.org/datasets/movielens/)
 
 Project developed at: [Wild Code School, Lisbon](https://github.com/WildCodeSchool)
 
+Created by: 
+  - [Mariana Moreira](https://www.linkedin.com/in/marianacormoreira/)
+  - [Miguel Mimoso](https://www.linkedin.com/in/miguelvitalmimoso/)
+  - [Renato Neto](https://www.linkedin.com/in/rmunhozneto/)
+  - [Rita Goncalves](https://www.linkedin.com/in/ritavigoncalves/)
+
 
 Here´s the app preview:
 
