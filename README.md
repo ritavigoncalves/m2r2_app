@@ -9,7 +9,7 @@ Project developed at: [Wild Code School, Lisbon](https://github.com/WildCodeScho
 
 Here´s the app preview:
 
-![Image](static/images/m2r2-app-preview.jpg =707.5x703)
+![Image](static/images/m2r2-app-preview.jpg)
 
 
 
