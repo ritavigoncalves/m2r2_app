@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>M2R2 Studios - Reco App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="keywords" content="html5,skeleton,index,homepage,jquery,bootstrap">
+  <meta name="author" content="Rita Goncalves">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="screen" rel="stylesheet">
+  </head>
+<body>
+    <div class="container">
+      <div class="form-inline mr-auto">
+        <h1>M2R2 Studios</h1>
+      </div>
+      <br>
+      <br>
+      <form class="form-inline mr-auto" action="/get_id" method="POST">
+        <input name="movie" class="form-control mr-sm-2" type="text" placeholder="Type a movie" aria-label="Type a movie">
+        <button class="btn btn-unique btn-rounded btn-sm my-0" type="submit">Search</button>
+      </form>
+      <br>
+      {% block content %}
+      {% endblock %}
+      {% block mymov %}
+      {% endblock %}
+    </div>
+  </div>
+</div>
+</body>
+</html>

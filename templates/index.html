@@ -1,0 +1,107 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<head>
+  <title>Reco Movie App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="keywords" content="html5,skeleton,index,homepage,jquery,bootstrap">
+  <meta name="author" content="Rita Goncalves">
+  <link rel="stylesheet" href="layout.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="screen" rel="stylesheet"> -->
+</head>
+<div class="moviesBody">
+  <div class="myMovieSection">
+    <form action="/" method="POST">
+      <h3>My Movie</h3>
+      <div class="myMovieCard">
+        <img src="static/images/cover_my_movie.jpg" alt="movie poster">
+        <p>{{my_movie}}</p>
+      </div>
+    </form>
+  </div>
+  
+  <div class="movieSuggestionSection">
+    <form action="/" method="POST">
+      <h3>Suggestions</h3>
+      <div class="movieSuggestions">
+        <div class="movieCard">
+          <div class="poster-img">
+            <img src="static/images/cover-1.jpg" alt="movie poster">
+          </div>
+          <p>{{ data[1] }}</p>
+        </div>
+        <div class="movieCard">
+          <div class="poster-img">
+            <img src="static/images/cover-2.jpg" alt="movie poster">
+          </div>
+          <p>{{ data[2] }}</p>
+        </div>
+        <div class="movieCard">
+          <div class="poster-img">
+            <img src="static/images/cover-3.jpg" alt="movie poster">
+          </div>
+          <p>{{ data[3] }}</p>
+        </div>
+        <div class="movieCard">
+          <div class="poster-img">
+            <img src="static/images/cover-4.jpg" alt="movie poster">
+          </div>
+          <p>{{ data[4] }}</p>
+        </div>
+        <div class="movieCard">
+          <div class="poster-img">
+            <img src="/static/images/cover-5.jpg" alt="movie poster">
+          </div>
+          <p>{{ data[5] }}</p>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+  <!-- <table classes="table" action="/" method="POST">
+    <thead>
+      <tr>
+        <th scope="col">My Movie</th>
+      </tr>
+    </thead> 
+    <tr>
+      <td>{{my_movie}}</td>
+    </tr>
+  </table>
+  <br>
+  <table classes="table" action="/" method="POST">
+    <thead>
+      <tr>
+        <th scope="col">All Movies</th>
+      </tr>
+    </thead>  -->
+    <!-- {% for i in data[0:1] %} -->
+    <!-- <tr>
+      <td>{{ data[1] }}</td>
+    </tr>
+    <tr>
+      <td>{{ data[2] }}</td>
+    </tr>
+    <tr>
+      <td>{{ data[3] }}</td>
+    </tr>
+    <tr>
+      <td>{{ data[4] }}</td>
+    </tr>
+    <tr>
+      <td>{{ data[5] }}</td>
+    </tr> -->
+   <!--  {% endfor %} -->
+  <!-- </table> -->
+
+{% endblock %}
+
+<!-- 
+{% for question in questions %}
+    <p>{{question[0]}}</p>
+    {% for answer in answers[0:3] %}
+        <p>{{answer}}</p>
+    {% endfor %}
+{% endfor %}-->

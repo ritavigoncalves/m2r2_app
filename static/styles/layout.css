@@ -1,0 +1,126 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1C2529;
+    text-decoration: none;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+.navOpt {
+    display: flex;
+}
+
+.navOpt li {
+    color: #FFFFFF;
+}
+
+li {
+    padding: 5px;
+}
+
+.logo {
+    color:#02E494;
+    font-weight: bold;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+.searchBox, .title, form, h1 {
+    background-color: #00E091;
+}
+
+
+.searchBox {
+    width: 60%;
+    padding: 100px;
+    margin: auto;
+}
+
+input {
+    height: 40px;
+    width: 80%;
+    text-indent: 10px;
+    color:  #FFFFFF;
+    border-style: none;
+}
+
+.btn {
+    height: 40px;
+    padding: 10px;
+    color:  #FFFFFF;
+    border-style: none;
+}
+
+.container {
+    padding-top: 50px;
+}
+
+.myMovieSection form {
+    background-color: #1C2529;
+    height: 55%;
+}
+
+.movieSuggestions {
+    display: flex;
+}
+
+.movieCard {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    overflow: hidden;
+}
+
+.movieCard:hover, .myMovieCard:hover {
+    transform: scale(1.1);
+}
+
+.poster-img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.myMovieCard {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    height: 220px;
+}
+
+.moviesBody {
+    width: 60%;
+    margin: auto;
+    color:#02E494;
+    font-weight: bold;
+}
+
+h3 {
+    padding-left: 20px;
+    padding-top: 120px;
+    padding-bottom: 20px;
+}
+
+p {
+    padding: 10px 0px;
+    color: #FFFFFF;
+}
+
+img {
+    width: 100%;
+}
