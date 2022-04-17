@@ -9,9 +9,9 @@ import csv
 
 # Datasets
 # users
-df_users_ratings = pd.read_csv('/Users/ritavieiragoncalves/mypython/test_app/static/df_users_ratings_file_to_test.csv', sep=',', index_col='movieId', header=0)
+df_users_ratings = pd.read_csv('static/df_users_ratings_file_to_test.csv', sep=',', index_col='movieId', header=0)
 # movies
-df_movies_ratings = pd.read_csv('/Users/ritavieiragoncalves/mypython/test_app/static/df_movie_ratings_file_to_test.csv', sep=',', index_col=0, header=0)
+df_movies_ratings = pd.read_csv('static/df_movie_ratings_file_to_test.csv', sep=',', index_col=0, header=0)
 
 ## -------- ##
 
