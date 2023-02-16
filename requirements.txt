@@ -10,6 +10,6 @@ mccabe==0.6.1
 pylint==2.5.2
 six==1.15.0
 toml==0.10.1
-Werkzeug==1.0.1
+Werkzeug==2.2.3
 wrapt==1.12.1
 scipy==0.19.1
